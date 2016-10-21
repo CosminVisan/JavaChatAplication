@@ -19,7 +19,7 @@ public class Message {
        
     }
     
-    public Message(String content, String sender){
+    public Message(String sender, String content){
         this.content = content;
         this.sender = sender;
     }

@@ -9,19 +9,23 @@ package seriaf.poo.structs;
  *
  * @author student
  */
-public class PrivateMessage {
-    private String sender;
-    private String destination;
-    private String content;
-    
+public class PrivateMessage extends Message {
+
+    private final String destination;
+
     @Override
-     public String toString(){
-         return sender + ":" + content;
-     }
-     public PrivateMessage(String sender, String destination, String content){
-    
-}
-     public String getRecipient(){
+    public String toString() {
+        return "(priv) " + super.toString();
+    }
+
+    public PrivateMessage(String destination, String sender, String content) {
+
+        super(sender, content);
+        this.destination = destination;
+
+    }
+
+    public String getRecipient() {
         return destination;
-     }
+    }
 }

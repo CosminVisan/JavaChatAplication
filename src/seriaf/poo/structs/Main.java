@@ -13,8 +13,12 @@ public class Main {
     
     public static void main(String[] args){
         Message m1;
-        m1 = new Message("Hey!", "Te salut!");
+        m1 = new Message("Alex", "Te salut!");
         
-        System.out.printf("%s", m1);
+        PrivateMessage a1;
+        a1 = new PrivateMessage("Alex", "Cosmin", "Salut!");
+        
+        System.out.printf("%s\n", m1);
+        System.out.printf("%s\n", a1);
     }
 }
